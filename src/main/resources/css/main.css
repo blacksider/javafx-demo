@@ -1,0 +1,42 @@
+/* jfx decorator part, about to change window style */
+.jfx-decorator {
+    -fx-decorator-color: derive(#3f3f3f, -20%);
+}
+
+.jfx-decorator .jfx-decorator-buttons-container {
+    -fx-background-color: -fx-decorator-color;
+}
+
+.jfx-decorator .resize-border {
+    -fx-border-color: -fx-decorator-color;
+    -fx-border-width: 0 1 1 1;
+}
+
+/* top menu part, change menu style */
+.top-menu .label {
+    -fx-text-fill: #2d2d2d;
+}
+
+.top-menu .menu-item {
+    -fx-padding: 0.3em 1em 0.3em 1em;
+}
+
+.top-menu .context-menu {
+    -fx-min-width: 10em;
+    -fx-padding: 0.1em 0 0 0;
+}
+
+.top-menu .menu-item .label {
+    -fx-text-fill: #2d2d2d;
+}
+
+.top-menu .menu-item .accelerator-text {
+    -fx-text-fill: grey;
+    -fx-padding: 0em 0em 0em 3em;
+}
+
+.jfx-button-primary {
+    -fx-text-fill: WHITE;
+    -fx-background-color: #5264AE;
+    -fx-font-size: 14px;
+}

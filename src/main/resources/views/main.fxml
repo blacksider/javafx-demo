@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<BorderPane fx:id="root" xmlns="http://javafx.com/javafx/8.0.112"
+            xmlns:fx="http://javafx.com/fxml/1">
+  <top>
+    <HBox prefHeight="10.0" BorderPane.alignment="CENTER">
+      <MenuBar styleClass="top-menu" prefHeight="25.0" HBox.hgrow="ALWAYS">
+        <Menu mnemonicParsing="false" text="菜单">
+          <MenuItem fx:id="home" mnemonicParsing="false" text="主页">
+            <accelerator>
+              <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+            </accelerator>
+          </MenuItem>
+          <MenuItem fx:id="demo" mnemonicParsing="false" text="发送请求">
+            <accelerator>
+              <KeyCodeCombination alt="UP" code="R" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+            </accelerator>
+          </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="编辑">
+          <MenuItem fx:id="save" mnemonicParsing="false" text="保存">
+            <accelerator>
+              <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+            </accelerator>
+          </MenuItem>
+        </Menu>
+      </MenuBar>
+    </HBox>
+  </top>
+  <center>
+  </center>
+</BorderPane>

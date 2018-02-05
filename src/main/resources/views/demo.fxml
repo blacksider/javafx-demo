@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane fx:id="root" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+  <center>
+    <VBox fx:id="infoForm" alignment="TOP_CENTER" spacing="40">
+      <HBox spacing="10">
+        <Label>类型</Label>
+        <JFXRadioButton fx:id="radioFood" selected="true" text="食物">
+          <toggleGroup>
+            <ToggleGroup fx:id="typeGroup"/>
+          </toggleGroup>
+          <cursor>
+            <Cursor fx:constant="HAND"/>
+          </cursor>
+        </JFXRadioButton>
+        <JFXRadioButton fx:id="radioTool" text="工具" toggleGroup="$typeGroup">
+          <cursor>
+            <Cursor fx:constant="HAND"/>
+          </cursor>
+        </JFXRadioButton>
+      </HBox>
+
+      <JFXTextField fx:id="nameField" labelFloat="true" promptText="名称">
+      </JFXTextField>
+
+      <JFXTextField fx:id="descField" labelFloat="true" promptText="说明">
+      </JFXTextField>
+
+      <padding>
+        <Insets bottom="20.0" left="10.0" right="10.0" top="10.0"/>
+      </padding>
+    </VBox>
+  </center>
+  <bottom>
+    <HBox prefHeight="70" alignment="CENTER_LEFT">
+      <JFXTextField fx:id="urlField" promptText="链接" labelFloat="true"
+                    HBox.hgrow="ALWAYS" maxWidth="1000">
+      </JFXTextField>
+      <HBox HBox.hgrow="ALWAYS" alignment="CENTER_RIGHT">
+        <JFXButton fx:id="postBtn" buttonType="RAISED" prefWidth="100" styleClass="jfx-button-primary" text="提交"/>
+      </HBox>
+      <padding>
+        <Insets left="10.0" bottom="10.0" right="10.0" top="10.0"/>
+      </padding>
+    </HBox>
+  </bottom>
+</BorderPane>

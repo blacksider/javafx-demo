@@ -1,0 +1,49 @@
+/* spinner part */
+.root {
+    -fx-glass-color: rgba(217, 220, 206, 0.25);
+}
+
+.register-dialog {
+    -fx-background-color: linear-gradient(to bottom, derive(-fx-glass-color, 20%), -fx-glass-color);
+}
+
+.spinner-black .arc {
+    -fx-stroke: #3f3f3f;
+}
+
+.spinner-dark .arc {
+    -fx-stroke: dimgray;
+}
+
+.spinner-gray .arc {
+    -fx-stroke: darkgray;
+}
+
+.jfx-spinner > .arc {
+    -fx-stroke-width: 3.0;
+    -fx-fill: transparent;
+}
+
+.first-spinner {
+    -jfx-radius: 20;
+}
+
+.first-spinner > .arc {
+    -fx-stroke-width: 5.0;
+}
+
+.second-spinner {
+    -jfx-radius: 30;
+}
+
+.second-spinner > .arc {
+    -fx-stroke-width: 5.0;
+}
+
+.third-spinner {
+    -jfx-radius: 40;
+}
+
+.third-spinner > .arc {
+    -fx-stroke-width: 5.0;
+}
